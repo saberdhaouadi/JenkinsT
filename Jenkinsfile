@@ -16,6 +16,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo "deploying the application...."
+                sh 'python3 file3.py'
             }
         }
     }
