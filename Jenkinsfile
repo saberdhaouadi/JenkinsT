@@ -10,6 +10,7 @@ pipeline {
         stage("test") {
             steps {
                 echo "testing the application...."
+                sh 'python3 file2.py'
             }
         }
         stage("deploy") {
