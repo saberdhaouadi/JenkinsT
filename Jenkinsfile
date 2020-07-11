@@ -4,6 +4,7 @@ pipeline {
         stage("build") {
             steps {
                 echo "building the application...."
+                python3 file1.py
             }
         }
         stage("test") {
